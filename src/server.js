@@ -2,7 +2,7 @@ const Hapi = require("@hapi/hapi");
 
 //Activities
 const activities = require("./api/activities");
-const ActivitiesService = require("./services/inMemory/ActivitiesService");
+const ActivitiesService = require("./services/postgres/ActivitiesService");
 const ActivitiesValidator = require("./validator/activities");
 
 const ClientError = require("./exceptions/ClientError");

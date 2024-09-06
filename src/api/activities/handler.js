@@ -10,11 +10,11 @@ class ActivitiesHandler {
 
   async postActivityHandler(request, h) {
     this._validator.validateActivityPayload(request.payload);
-    const { title, desc = `${title}`, date, image, category } = request.payload;
+    const { title, description = `${title}`, date, image, category } = request.payload;
 
     const activityId = await this._service.addActivity({
       title,
-      desc,
+      description,
       date,
       image,
       category,

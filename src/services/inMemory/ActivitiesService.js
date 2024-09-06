@@ -8,7 +8,7 @@ class ActivitiesService {
   }
 
   addActivity({ title, desc, date, image, category }) {
-    const id = `kegiatan-${nanoid(16)}`;
+    const id = `kegiatan-${nanoid(7)}`;
     const createdAt = new Date().toISOString();
 
     const newActivity = {
