@@ -25,7 +25,7 @@ function App() {
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/kelas" element={<KelasPage />} />
+        <Route path="/program" element={<KelasPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/kontak" element={<Contact />} />
         <Route path="/mitra" element={<MitraPage />} />
