@@ -1,14 +1,20 @@
 const Hapi = require("@hapi/hapi");
 
-//Activities
+// Activities
 const activities = require("./api/activities");
 const ActivitiesService = require("./services/postgres/ActivitiesService");
 const ActivitiesValidator = require("./validator/activities");
 
-//Users
+// Users
 const users = require("./api/users");
 const UsersService = require("./services/postgres/UsersService");
 const UsersValidator = require("./validator/users");
+
+// Authentications
+const authentications = require("./api/authentications");
+const AuthenticationsService = require("./services/postgres/AuthenticationsService");
+const TokenManager = require("./tokenize/TokenManager");
+const AuthenticationsValidator = require("./validator/authentications");
 
 const ClientError = require("./exceptions/ClientError");
 require("dotenv").config();
@@ -16,6 +22,7 @@ require("dotenv").config();
 const init = async () => {
   const activitiesService = new ActivitiesService();
   const usersService = new UsersService();
+  const authenticationsService = new AuthenticationsService();
 
   const server = Hapi.server({
     port: process.env.PORT,
@@ -40,6 +47,15 @@ const init = async () => {
       options: {
         service: usersService,
         validator: UsersValidator,
+      },
+    },
+    {
+      plugin: authentications,
+      options: {
+        authenticationsService,
+        usersService,
+        tokenManager: TokenManager,
+        validator: AuthenticationsValidator,
       },
     },
   ]);
