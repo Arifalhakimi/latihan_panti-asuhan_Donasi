@@ -1,3 +1,4 @@
+import { ProgressBar } from "react-bootstrap";
 import BengkelImage1 from "../assets/img/bengkel/bengkel1.jpeg";
 import BengkelImage2 from "../assets/img/bengkel/bengkel2.jpeg";
 import BengkelImage3 from "../assets/img/bengkel/bengkel3.jpeg";
@@ -31,7 +32,7 @@ export const navLinks = [
   {
     id: 4,
     path: "faq",
-    text: "Tenntang Kami",
+    text: "Tentang Kami",
   },
   {
     id: 5,
@@ -39,6 +40,45 @@ export const navLinks = [
     text: "Kontak Kami",
   },
 ];
+
+export const kegiatan = [
+  {
+    id: 1,
+    image: People1,
+    judul: "Bakti sosial yang dilakukan dari sahabat yatim",
+    title: "Sebagai bentuk kepedulian dan rasa kasih sayang kepada anak-anak panti asuhan, Mahasiswa Pendidikan Jasmani Kesehatan dan Rekreasi UMMI menyerahkan donasi bakti sosial di Panti Asuhan Muslimin Sukmawinata Kota Sukabumi Sabtu lalu (20/02).",
+  },
+  {
+    id: 2,
+    image: People1,
+    judul: "Bakti sosial yang dilakukan dari sahabat yatim",
+    title: " kepada anak-anak panti asuhan, Mahasiswa Pendidikan Jasmani Kesehatan dan Rekreasi UMMI menyerahkan donasi bakti sosial di Panti Asuhan Muslimin Sukmawinata Kota Sukabumi Sabtu lalu (20/02).",
+  },
+  {
+    id: 3,
+    image: People1,
+    judul: "Bakti sosial yang dilakukan dari sahabat yatim",
+    title: "Sebagai bentuk kepedulian dan rasa kasih sayang kepada anak-anak panti asuhan, Mahasiswa Pendidikan Jasmani Kesehatan dan Rekreasi UMMI menyerahkan donasi bakti sosial di Panti Asuhan Muslimin Sukmawinata Kota Sukabumi Sabtu lalu (20/02).",
+  },
+  {
+    id: 4,
+    image: People1,
+    judul: "Bakti sosial yang dilakukan dari sahabat yatim",
+    title: "Sebagai bentuk kepedulian dan rasa kasih sayang kepada anak-anak panti asuhan, Mahasiswa Pendidikan Jasmani Kesehatan dan Rekreasi UMMI menyerahkan donasi bakti sosial di Panti Asuhan Muslimin Sukmawinata Kota Sukabumi Sabtu lalu (20/02).",
+  },
+  {
+    id: 5,
+    image: People1,
+    judul: "Bakti sosial yang dilakukan dari sahabat yatim",
+    title: "Sebagai bentuk kepedulian dan rasa kasih sayang kepada anak-anak panti asuhan, Mahasiswa Pendidikan Jasmani Kesehatan dan Rekreasi UMMI menyerahkan donasi bakti sosial di Panti Asuhan Muslimin Sukmawinata Kota Sukabumi Sabtu lalu (20/02).",
+  },
+  {
+    id: 6,
+    image: People1,
+    judul: "Bakti sosial yang dilakukan dari sahabat yatim",
+    title: "Sebagai bentuk kepedulian dan rasa kasih sayang kepada anak-anak panti asuhan, Mahasiswa Pendidikan Jasmani Kesehatan dan Rekreasi UMMI menyerahkan donasi bakti sosial di Panti Asuhan Muslimin Sukmawinata Kota Sukabumi Sabtu lalu (20/02).",
+  },
+]
 
 export const sideBarlink = [
   {
@@ -79,7 +119,8 @@ export const semuaKelas = [
     buy: "Mulai",
     delay: "",
     terkumpul: "120.000",
-    waktu: "30 Hari"
+    waktu: "30 Hari",
+    progressBar: "30%",
   },
   {
     id: 2,
@@ -92,7 +133,8 @@ export const semuaKelas = [
     buy: "Mulai",
     delay: "",
     terkumpul: "120.000",
-    waktu: "30 Hari"
+    waktu: "30 Hari",
+    progressBar: "50%"
   },
   {
     id: 3,
@@ -105,7 +147,8 @@ export const semuaKelas = [
     buy: "Mulai",
     delay: "",
     terkumpul: "120.000",
-    waktu: "30 Hari"
+    waktu: "30 Hari",
+    progressBar: "10%"
   },
   {
     id: 4,
@@ -118,7 +161,8 @@ export const semuaKelas = [
     buy: "Mulai",
     delay: "",
     terkumpul: "120.000",
-    waktu: "30 Hari"
+    waktu: "30 Hari",
+    progressBar: "35%"
   },
   {
     id: 5,
@@ -131,7 +175,8 @@ export const semuaKelas = [
     buy: "Mulai",
     delay: "",
     terkumpul: "120.000",
-    waktu: "30 Hari"
+    waktu: "30 Hari",
+    progressBar: "80%"
   },
   {
     id: 6,
@@ -144,7 +189,8 @@ export const semuaKelas = [
     buy: "Mulai",
     delay: "",
     terkumpul: "120.000",
-    waktu: "30 Hari"
+    waktu: "30 Hari",
+    progressBar: "30%"
   },
 ];
 
@@ -267,7 +313,7 @@ export const kelasTerbaru = [
     iconAlamat: "fas fa-map-marker",
     desc: "Perbaiki mobil anda",
     buy: "Mulai",
-    delay: "200",terkumpul: "210.000",
+    delay: "200", terkumpul: "210.000",
     waktu: "18 Hari"
   },
   {

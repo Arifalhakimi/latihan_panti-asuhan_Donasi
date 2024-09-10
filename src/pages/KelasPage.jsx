@@ -2,7 +2,7 @@
 // import axios from 'axios';
 import { Container, Row, Col } from "react-bootstrap";
 import { semuaKelas } from "../data/index";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 
 const KelasPage = () => {
@@ -21,10 +21,10 @@ const KelasPage = () => {
   //     fetchOrders();
   // }, []);
 
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/informasi")
-  }
+  // const navigate = useNavigate();
+  // const handleClick = () => {
+  //   navigate("/informasi")
+  // }
   return (
     <div className="service-page">
       <div className="service min-vh-100">
@@ -57,8 +57,8 @@ const KelasPage = () => {
 
                     {/* Progress Bar */}
                     <div className="progress bg-white mb-3">
-                      <div className="progress-bar" style={{ width: "50%" }}>
-                        50%
+                      <div className="progress-bar" style={{ width: `${kelas.progressBar}` }}>
+                        {kelas.progressBar}
                       </div>
                     </div>
 

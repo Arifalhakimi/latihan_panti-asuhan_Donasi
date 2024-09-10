@@ -502,16 +502,17 @@ header .container .header-box .image-hero img {
   overflow: hidden;
   height: 20px;
 }
+
 .service-page .service .progress-bar {
   background-color: #28a745;
   height: 20px;
   border-radius: 12px;
 }
 
-.service-page .service .detail{
+.service-page .service .detail {
   margin-left: 10px;
   margin-right: 10px;
-  
+
 }
 
 .service-page .service .icon-detail {
@@ -533,14 +534,14 @@ header .container .header-box .image-hero img {
 }
 
 .service-page .service .button-program button {
-  width: 100%;                
-  font-size: 0.775rem;        
-  height: 27px;               
-  line-height: 27px;          
-  transition: background-color 0.3s ease;  
-  display: flex;              
-  align-items: center;        
-  justify-content: center;    
+  width: 100%;
+  font-size: 0.775rem;
+  height: 27px;
+  line-height: 27px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-page .service .button-program button:hover {
@@ -701,7 +702,6 @@ header .container .header-box .image-hero img {
 
 /* about start */
 .about-component {
-  background-color: var(--primary-color);
   padding-top: 20px;
 }
 
@@ -751,10 +751,22 @@ header .container .header-box .image-hero img {
 
 /* about end */
 
-/* mitra start */
-.carousel-mitra {
-  background-color: var(--primary-color);
+/* about-page start */
+.about-page {
+  background-image: url(../../assets/img/wave.svg);
+  background-repeat: no-repeat;
+  background-position: center -30px;
+  padding-top: -100px;
 }
+
+.about-page .about {
+  padding-top: 70px;
+}
+
+
+/* about-page end */
+
+/* mitra start */
 
 .carousel-mitra img {
   width: 100%;
@@ -764,9 +776,60 @@ header .container .header-box .image-hero img {
   filter: brightness(40%);
 }
 
+.mitra-page {
+  background-image: url(../../assets/img/wave.svg);
+  background-repeat: no-repeat;
+  background-position: center -30px;
+  padding-top: 50px;
+}
+
 .mitra-page .mitra {
-  padding-top: 80px;
-  background-color: var(--primary-color);
+  padding-top: 90px;
+}
+
+.mitra-page .mitra .kegiatan {
+  gap: 20px;
+}
+
+.mitra-page .mitra .kegiatan .kegiatan-card {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.mitra-page .mitra .kegiatan .kegiatan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mitra-page .mitra .kegiatan .kegiatan-card .kegiatan-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mitra-page .mitra .kegiatan .card-body {
+  text-align: center;
+  padding: 10px;
+}
+
+.mitra-page .mitra .kegiatan .card-body {
+  text-align: center;
+  padding: 10px;
+}
+
+.mitra-page .mitra .kegiatan .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.mitra-page .mitra .kegiatan .card-subtitle {
+  font-size: 1rem;
+  color: #888;
 }
 
 .mitra-page .mitra .manfaat-mitra {
@@ -783,9 +846,6 @@ header .container .header-box .image-hero img {
   font-weight: 600;
 }
 
-.mitra-page .mitra {
-  background-color: var(--primary-color);
-}
 
 .mitra-page .mitra h1 {
   color: var(--color-text);
@@ -914,9 +974,14 @@ header .container .header-box .image-hero img {
 /* mitra-page .mitra end */
 
 /* syarat dan ketentuan start */
+.Contact-page {
+  background-image: url(../../assets/img/wave.svg);
+  background-repeat: no-repeat;
+  background-position: center -30px;
+}
+
 .Contact-page .Contact {
   padding-top: 150px;
-  background-color: var(--primary-color);
   padding-bottom: 30px;
 }
 

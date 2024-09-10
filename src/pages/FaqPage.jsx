@@ -1,9 +1,11 @@
 
-import FaqComponent from "../components/FaqComponent"
+import AboutComponent from "../components/AboutComponent"
 const FaqPage = () => {
   return (
-    <div>
-      <FaqComponent/>
+    <div className="about-page">
+      <div className="about">
+      <AboutComponent />
+      </div>
     </div>
   )
 }
