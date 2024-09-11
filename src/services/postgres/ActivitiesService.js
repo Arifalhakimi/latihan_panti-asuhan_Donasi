@@ -35,7 +35,7 @@ class ActivitiesService {
 
   async getActivityById(id) {
     const query = {
-      text: "SELECT * FROM activities WHERE id = $1",
+      text: "SELECT * FROM activities WHERE activity_id = $1",
       values: [id],
     };
     const result = await this._pool.query(query);
@@ -43,11 +43,13 @@ class ActivitiesService {
     if (!result.rows.length) {
       throw new NotFoundError("Kegiatan tidak ada");
     }
+
+    return result.rows.map(mapDBActivitiesToModel)[0];
   }
 
   async deleteActivityById(id) {
     const query = {
-      text: "DELETE FROM activities WHERE id = $1 RETURNING activity_id",
+      text: "DELETE FROM activities WHERE activity_id = $1 RETURNING activity_id",
       values: [id],
     };
     const result = await this._pool.query(query);
