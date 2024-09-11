@@ -2,7 +2,7 @@
 // import axios from 'axios';
 import { Container, Row, Col } from "react-bootstrap";
 import { semuaKelas } from "../data/index";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const KelasPage = () => {
@@ -21,10 +21,10 @@ const KelasPage = () => {
   //     fetchOrders();
   // }, []);
 
-  // const navigate = useNavigate();
-  // const handleClick = () => {
-  //   navigate("/informasi")
-  // }
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/detail")
+  }
   return (
     <div className="service-page">
       <div className="service min-vh-100">
@@ -75,7 +75,7 @@ const KelasPage = () => {
                         </div>
                       </div>
                       <div className="button-program col-3 d-flex flex-column gap-2">
-                        <button className="btn btn-success btn-sm rounded-5">Detail</button>
+                        <button className="btn btn-success btn-sm rounded-5" onClick={() => handleClick('/detail')} >Detail</button>
                         <button className="btn btn-success btn-sm rounded-5">Donasi</button>
                       </div>
                     </div>

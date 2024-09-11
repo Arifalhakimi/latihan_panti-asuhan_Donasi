@@ -1414,6 +1414,22 @@ header .container .header-box .image-hero img {
 
 }
 
+.login-page form .text-judul{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.login-page form .text-judul h1{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-page form .text-judul p{
+  margin-left: 15px;
+}
+
 .login-page form {
   width: 500px;
   background-color: #ccdfd3c5;
@@ -1430,8 +1446,9 @@ header .container .header-box .image-hero img {
 }
 
 .login-page form button {
-  margin-left: 215px;
+  margin-left: 170px;
   margin-bottom: 10px;
+  width: 150px;
 }
 
 .login-page form .icon {
@@ -1464,9 +1481,22 @@ header .container .header-box .image-hero img {
   cursor: pointer;
 }
 
+.login-page form .icon {
+  background-color: white;   /* Latar belakang putih */
+  width: 80%;                /* Lebar icon */
+  border-radius: 5px;        /* Membulatkan sudut */
+  margin-left: 52px;         /* Jarak dari kiri */
+  height: 50px;              /* Tinggi icon */
+  border: 1px solid rgba(0, 0, 0, 0.397);   /* Border hitam dengan ketebalan 2px */
+  display: flex;             /* Menggunakan flexbox untuk perataan */
+  align-items: center;       /* Menyelaraskan konten secara vertikal */
+  padding-left: 10px;
+}
+
 .login-page form .icon img {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
+  margin-right: 130px;
 }
 
 /* loginPage end */
@@ -1529,4 +1559,37 @@ header .container .header-box .image-hero img {
   cursor: pointer;
 }
 
+.register-page form .icon{
+  background-color: white;   /* Latar belakang putih */
+  width: 80%;                /* Lebar icon */
+  border-radius: 5px;        /* Membulatkan sudut */
+  margin-left: 52px;         /* Jarak dari kiri */
+  height: 50px;              /* Tinggi icon */
+  border: 1px solid rgba(0, 0, 0, 0.397);   /* Border hitam dengan ketebalan 2px */
+  display: flex;             /* Menggunakan flexbox untuk perataan */
+  align-items: center;       /* Menyelaraskan konten secara vertikal */
+  padding-left: 10px;
+}
+
+.register-page form .icon img {
+  width: 45px;
+  height: 45px;
+  margin-right: 130px;
+}
+
 /* register end */
+
+/* DetailProgram start*/
+.detailProgramPage{
+
+}
+
+.detailProgramPage .detail .image{
+  padding-top: 100px;
+}
+
+.detailProgramPage .detail .image img{
+  width: 500px;
+  height: 300px;
+}
+/* DetailProgram end*/

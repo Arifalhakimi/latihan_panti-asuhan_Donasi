@@ -12,7 +12,7 @@ import AboutComponent from '../components/AboutComponent';
 import { kelasTerbaru, } from "../data/index";
 import { useNavigate } from "react-router-dom";
 import TestiComponent from '../components/TestiComponent';
-import ContactPage from './Contact';
+
 
 const HomePage = () => {
   let navigate = useNavigate();
@@ -96,7 +96,6 @@ const HomePage = () => {
       <div className='home-page-component'>
         <AboutComponent />
         <TestiComponent />
-        <ContactPage />
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Form, Button, InputGroup } from 'react-bootstrap';
-import IconBengkel from '../assets/img/iconBengkel.png';
+// import IconBengkel from '../assets/img/iconBengkel.png';
 import { useNavigate } from "react-router-dom";
 import LogoGoogle from "../assets/img/logogoogle.png";
 import axios from "axios";
@@ -29,8 +29,7 @@ const errorMessageDisplay = (text) => (
 
 const LoginPage = () => {
     let Navigate = useNavigate();
-    const [userRole, setUserRole] = useState(null);
-
+    // const [userRole, setUserRole] = useState(null);
     const handleLogin = (userData) => {
         try {
             // Set data pengguna ke sessionStorage
@@ -121,8 +120,10 @@ const LoginPage = () => {
     return (
         <Container fluid className="login-page w-100 min-vh-100">
             <Form onSubmit={handleSubmit(onSubmit)}>
-                <img src={IconBengkel} alt="" />
-
+                <div className='text-judul'>
+                    <h1>Selamat Datang</h1>
+                    <p>Kami sangat senang melihat anda masuk kembali semoga anda dilimpahkan rezeki yang berkah</p>
+                </div>
                 <Form.Group className="mb-3 mx-5" controlId="formBasicEmail">
                     <InputGroup className="mb-3">
                         <InputGroup.Text id="email"><i className="fas fa-mail-bulk"></i></InputGroup.Text>
@@ -167,13 +168,16 @@ const LoginPage = () => {
                     </Form.Text>
                 </Form.Group>
 
-                <Button variant="danger" type="submit" className="rounded-5">
+                <Button variant="danger" type="submit" className="rounded-5 ">
                     Masuk
                 </Button>
                 <Form.Text className="text-muted d-flex justify-content-center">
                     Atau masuk dengan
                 </Form.Text>
-                <div className="icon mt-2">
+                <div className="icon mt-2 d-flex justify-content-center align-items-center">
+                    <img src={LogoGoogle} alt="" />
+                </div>
+                <div className="icon mt-2 d-flex justify-content-center align-items-center">
                     <img src={LogoGoogle} alt="" />
                 </div>
                 <Form.Text className="text-muted d-flex justify-content-center mb-5 mt-2">

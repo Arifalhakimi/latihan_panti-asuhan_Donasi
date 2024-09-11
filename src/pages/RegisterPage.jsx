@@ -4,8 +4,9 @@ import { useForm } from "react-hook-form"; // Tambahkan import ini
 import Swal from "sweetalert2";
 import { Container, Form, Button, InputGroup } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
+import LogoGoogle from "../assets/img/logogoogle.png";
 
-const axiosHandler = async (url, data) => await axios.post(url, data);
+// const axiosHandler = async (url, data) => await axios.post(url, data);
 
 const errorMessageDisplay = (text) => (
     <p
@@ -172,8 +173,11 @@ const RegisterPage = () => {
                 <Button variant="danger" type="submit" className="rounded-5" >
                     Daftar
                 </Button>
-                <div className="icon mb-2 mt-2">
-                    <i className="fab fa-google"></i>
+                <div className="icon mt-2 d-flex justify-content-center align-items-center">
+                    <img src={LogoGoogle} alt="" />
+                </div>
+                <div className="icon mt-2 d-flex justify-content-center align-items-center">
+                    <img src={LogoGoogle} alt="" />
                 </div>
                 <Form.Text className="text-muted d-flex justify-content-center mb-5">
                     Sudah punya akun? <span onClick={() => Navigate('/login')}>Masuk</span>
