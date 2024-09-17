@@ -23,7 +23,7 @@ exports.up = (pgm) => {
             notNull: true,
         },
         no_telp: {
-            type: 'VARCHAR(13)',
+            type: 'INTEGER',
             notNull: false,
         },
         password: {

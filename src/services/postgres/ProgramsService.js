@@ -25,7 +25,7 @@ class ProgramsService {
       throw new InvariantError("Program gagal ditambah");
     }
 
-    return result.rows[0].id;
+    return result.rows[0].program_id;
   }
 
   async getPrograms() {

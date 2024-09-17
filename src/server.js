@@ -16,6 +16,11 @@ const AuthenticationsService = require("./services/postgres/AuthenticationsServi
 const TokenManager = require("./tokenize/TokenManager");
 const AuthenticationsValidator = require("./validator/authentications");
 
+// Programs
+const programs = require("./api/programs");
+const ProgramsService = require("./services/postgres/ProgramsService");
+const ProgramsValidator = require("./validator/programs");
+
 const ClientError = require("./exceptions/ClientError");
 require("dotenv").config();
 
@@ -23,6 +28,7 @@ const init = async () => {
   const activitiesService = new ActivitiesService();
   const usersService = new UsersService();
   const authenticationsService = new AuthenticationsService();
+  const programsService = new ProgramsService();
 
   const server = Hapi.server({
     port: process.env.PORT,
@@ -56,6 +62,13 @@ const init = async () => {
         usersService,
         tokenManager: TokenManager,
         validator: AuthenticationsValidator,
+      },
+    },
+    {
+      plugin: programs,
+      options: {
+        service: programsService,
+        validator: ProgramsValidator,
       },
     },
   ]);
