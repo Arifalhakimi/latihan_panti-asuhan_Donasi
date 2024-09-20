@@ -1581,15 +1581,230 @@ header .container .header-box .image-hero img {
 
 /* DetailProgram start*/
 .detailProgramPage{
+background-image: url(../../assets/img/wave.svg);
+background-repeat: no-repeat;
+background-position: center -30px;
+}
 
+.detailProgramPage .detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .detailProgramPage .detail .image{
-  padding-top: 100px;
+  margin-top: 100px;
+  padding-bottom: 40px;
 }
 
 .detailProgramPage .detail .image img{
-  width: 500px;
-  height: 300px;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
+
+.detailProgramPage .detail .text{
+  margin-top: 150px;
+}
+
+.detailProgramPage .detail .text-progress h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.detailProgramPage .detail .text-progress .progress {
+  height: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.detailProgramPage .detail .text-progress .progress .progress-bar {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailProgramPage .detail .text-progress .total-hari {
+  font-size: 1rem;
+  color: #555;
+}
+
+.detailProgramPage .detail .text .deskripsi p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.detailProgramPage .detail .donatur h3{
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.detailProgramPage .detail .donatur .daftar-donatur-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.detailProgramPage .detail .donatur .daftar-donatur-container .donatur-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd; /* Garis bawah untuk memisahkan donatur */
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.detailProgramPage .detail .donatur .daftar-donatur-container .donatur-item:last-child {
+  border-bottom: none; /* Menghapus garis bawah pada item terakhir */
+}
+
+.detailProgramPage .detail .donatur .daftar-donatur-container .donatur-item .donatur-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan pada gambar */
+}
+
+.detailProgramPage .detail .donatur .daftar-donatur-container .donatur-item .daftar-nama p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.detailProgramPage .detail .donatur .daftar-donatur-container .donatur-item  .daftar-nama .fw-bold {
+  font-size: 1.1rem;
+}
+
+.detailProgramPage .detail .donatur .daftar-donatur-container .donatur-item .tanggal p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #888; /* Warna teks yang lebih lembut */
+}
+
 /* DetailProgram end*/
+
+/* donasi Page */
+
+.donasiPage .donasi{
+  background-image: url(../../assets/img/wave.svg);
+  background-repeat: no-repeat;
+}
+
+.donasiPage .donasi .image{
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+
+.donasiPage .donasi .image img{
+  width: 100%;
+  height: 350px;
+  border-radius: 50px;
+}
+.donasiPage .donasi .nominal .angka {
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.donasiPage .donasi .nominal .nominal-donasi:hover{
+  transform: 1s;
+}
+
+.donasiPage .donasi .nominal .nominal-donasi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.donasiPage .donasi .nominal .angka .angka-donasi{
+  width: 300px;
+  height: 40px;
+  border: 1px solid;
+  color: #36363686;
+  border-radius: 5px;
+}
+.donasiPage .donasi .nominal .angka .angka-donasi p{
+  align-items: center;
+  justify-content: center; 
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+.donasiPage .donasi .nominal .angka .angka-donasi p:hover{
+  color: #000000;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya{
+  margin-top: 10px;
+}
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya{
+
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .form-text{
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 100px;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .form-control{
+  border-radius: 8px;
+  border: 2px solid #cccccc;
+  padding: 10px;
+  font-size: 16px;
+  width: 920px;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .pilih-pembayaran{
+  display: flex;
+  justify-content: space-between;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .pilih-pembayaran .dropdown-pilihpembayaran{
+  margin-right: 100px;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .text-form .text-data{
+  color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .text-form .nama {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .text-form .nama .nama__form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .text-form .nama .form-nama1,
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .text-form .nama .form-nama2{
+font-size: 18px;
+font-weight: 400;
+color: #000000;
+}
+
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .form-text-area .textarea{
+  margin-left: 100px;
+}
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .button-form{
+display: flex;
+justify-content: center;
+}
+.donasiPage .donasi .nominal .nominal-lainnya .form-nominal-lainnya .button-form .buton-formnominal{
+  border-radius: 100px;
+}
+
+

@@ -18,6 +18,7 @@ import ProfileUserPage from "./pages/ProfileUserPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import DetailProgramPage from "./pages/DetailProgramPage";
+import DonasiPage from "./pages/DonasiPage";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/detail" element={<DetailProgramPage/>} />
+        <Route path="/donasi" element={<DonasiPage/>} />
 
         {/* SidebarComponent ditampilkan di halaman berikut */}
         <Route

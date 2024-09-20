@@ -22,8 +22,12 @@ const KelasPage = () => {
   // }, []);
 
   const navigate = useNavigate();
+  const navigateDonasi = useNavigate();
   const handleClick = () => {
     navigate("/detail")
+  }
+  const handleClick1 = () => {
+    navigateDonasi("/donasi")
   }
   return (
     <div className="service-page">
@@ -76,7 +80,7 @@ const KelasPage = () => {
                       </div>
                       <div className="button-program col-3 d-flex flex-column gap-2">
                         <button className="btn btn-success btn-sm rounded-5" onClick={() => handleClick('/detail')} >Detail</button>
-                        <button className="btn btn-success btn-sm rounded-5">Donasi</button>
+                        <button className="btn btn-success btn-sm rounded-5" onClick={() => handleClick1('/donasi') } >Donasi</button>
                       </div>
                     </div>
                   </div>

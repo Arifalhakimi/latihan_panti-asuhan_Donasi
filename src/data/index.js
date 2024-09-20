@@ -1,4 +1,4 @@
-import { ProgressBar } from "react-bootstrap";
+
 import BengkelImage1 from "../assets/img/bengkel/bengkel1.jpeg";
 import BengkelImage2 from "../assets/img/bengkel/bengkel2.jpeg";
 import BengkelImage3 from "../assets/img/bengkel/bengkel3.jpeg";
@@ -525,3 +525,55 @@ export const faq = [
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.",
   },
 ];
+
+export const detail_donatur = [
+  {
+    id: 1,
+    img: BengkelImage4,
+    nama: "Hamba Allah",
+    jumlah: "10.000" ,
+    tanggal: "20/9/2024" 
+  },
+  {
+    id: 2,
+    img: BengkelImage5,
+    nama: "Hamba Allah",
+    jumlah: "10.000" ,
+    tanggal: "20/9/2024" 
+  },
+  {
+    id: 3,
+    img: BengkelImage6,
+    nama: "Hamba Allah",
+    jumlah: "10.000" ,
+    tanggal: "20/9/2024" 
+  },
+];
+
+export const donasi_donatur = [
+  {
+    id: 1,
+    jumlah: "10.000"
+  },
+  {
+    id: 2,
+    jumlah: "20.000"
+  },
+  {
+    id: 3,
+    jumlah: "50.000"
+  },
+  {
+    id: 4,
+    jumlah: "100.000"
+  },
+  {
+    id: 5,
+    jumlah: "200.000"
+  },
+  {
+    id: 6,
+    jumlah: "500.000"
+  }
+];
+
